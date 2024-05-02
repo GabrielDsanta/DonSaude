@@ -1,0 +1,7 @@
+{
+  "dev-host": "https://don-saude-server-03ace20d1b76.herokuapp.com",
+  "qa-host": "https://don-saude-server-03ace20d1b76.herokuapp.com",
+  "test-host": "https://don-saude-server-03ace20d1b76.herokuapp.com",
+  "staging-host": "https://don-saude-server-03ace20d1b76.herokuapp.com",
+  "environment": "development"
+}
