@@ -1,11 +1,7 @@
 import React, { FC } from "react";
+
 import { BellRinging, ChatCircleDots } from "phosphor-react-native";
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useSelector } from "react-redux";
 import { State } from "@redux/store/configureStore";
 
@@ -33,7 +29,7 @@ export const HomeHeader: FC = () => {
         </View>
       </View>
 
-      <Text style={styles.boldText}>Olá, {user.name}</Text>
+      <Text style={styles.boldText}>Olá, {user.name ? user.name : "Paciente"}</Text>
       <Text style={styles.regularText}>Como podemos te ajudar hoje?</Text>
     </View>
   );
@@ -43,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     marginTop: 10,
-    marginBottom: 5
+    marginBottom: 5,
   },
   containerIcons: {
     flexDirection: "row",
